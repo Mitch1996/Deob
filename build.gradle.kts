@@ -23,7 +23,9 @@ repositories {
 dependencies {
     testImplementation(kotlin("test-junit"))
     implementation("io.netty:netty-all:4.1.53.Final")
+    implementation ("io.github.microutils:kotlin-logging:1.12.0")
+    implementation("org.slf4j:slf4j-simple:1.7.29")
 }
 tasks.withType<KotlinCompile>() {
-    kotlinOptions.jvmTarget = "1.11"
+    kotlinOptions.jvmTarget = "11"
 }
